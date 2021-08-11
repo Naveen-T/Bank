@@ -29,7 +29,31 @@ export class HomeLoanPO {
      return this.element(by.css('[aria-describedby="q3q2i1 q3q2i2"]'));
   } 
 
-   get otherLoan() {
+  get otherLoan() {
      return this.element(by.css('[aria-describedby="q3q3i1 q3q3i2"]'));
   } 
+  
+  get otherLCommitments() {
+     return this.element(by.css('[aria-describedby="q3q4i1 q3q4i2"]'));
+  } 
+  
+  get creditCardLimit() {
+     return this.element(by.css('[aria-describedby="q3q5i1"]'));
+  } 
+  
+   get workOutButton() {
+      return this.element(by.id('btnBorrowCalculater'));
+  }
+  
+   get startOver() {
+     return this.element(by.css('.borrow__result button[aria-label="Start over"]'));
+  } 
+  
+  get result() {
+    return this.element(by.css('.borrow__result'));
+  }
+  
+  get errorText() {
+    return this.element(by.css('.borrow__error__text'));
+  }
 }
