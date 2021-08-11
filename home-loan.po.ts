@@ -1,4 +1,4 @@
-import { by } from "protractor";
+import org.openqa.selenium.By;
 
 export class HomeLoanPO {
   get appicationType() {
