@@ -5,7 +5,7 @@ let homeLoan : HomeLoanPO;
 
 describe('ANZ Home Loan', () => {
   beforeAll(async () => {
-      await GoToPage.navigateTo('https://www.anz.com.au/personal/home-loans/calculators-tools/much-borrow/');
+      await GoToPage.bySuburl('https://www.anz.com.au/personal/home-loans/calculators-tools/much-borrow/');
   });
   
   describe('Home Loan', () => {
