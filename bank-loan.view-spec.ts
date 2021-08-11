@@ -29,7 +29,7 @@ describe('ANZ Home Loan', () => {
         await homeLoan.workOutButton.click();
         expect(await homeLoan.result.getText()).toEqual('$479,000');
     });
-
+    
     it('Validate start over button to clear the form', async () => {
         await homeLoan.startOver.click();
         expect(await homeLoan.workOutButton.isDisplayed()).toEqual(true);
