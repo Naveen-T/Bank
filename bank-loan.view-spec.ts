@@ -1,11 +1,11 @@
 import { HomeLoanPO } from "../../../home-loan.po";
-import { GoTo Page } from "../../../generic-helpers";
+import { GoToPage } from "../../../generic-helpers";
 
 let homeLoan : HomeLoanPO;
 
 describe('ANZ Home Loan', () => {
   beforeAll(async () => {
-      await GoToPage.navigateTo('hhtps://www.anz.com.au/personal/home-loans/calculators-tools/much-borrow/');
+      await GoToPage.navigateTo('https://www.anz.com.au/personal/home-loans/calculators-tools/much-borrow/');
   });
   
   describe('Home Loan', () => {
